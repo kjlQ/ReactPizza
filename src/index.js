@@ -1,4 +1,15 @@
-export {default as FiInstagram} from 'react-icons/fi'
-export {default as AiOutlineTwitter} from 'react-icons/ai'
-export {default as AiOutlineGoogle} from 'react-icons/ai'
-export {default as FaFacebookF} from 'react-icons/fa'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import {BrowserRouter , Route} from "react-router-dom";
+
+ReactDOM.render(
+
+        <BrowserRouter>
+            <Route>
+                <App />
+            </Route>
+        </BrowserRouter>
+
+  ,document.getElementById('root')
+);

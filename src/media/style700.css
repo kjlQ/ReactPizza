@@ -1,0 +1,56 @@
+@media (max-width: 700px) {
+    .Pizzas {
+        grid-template-columns: 1fr;
+    }
+    .sort-by {
+        width: 80%;
+    }
+    .header-top {
+        width: 95%;
+        display: block;
+        height: auto;
+        padding: 20px 0;
+    }
+    .cart {
+        float: right;
+        margin-top: 20px;
+    }
+    .cart .mcart span {
+        color: #000;
+        background: #ffdfc4;
+        position: absolute;
+        top: 50%;
+        padding:0 5px;
+        border-radius: 50%;
+    }
+    .main {
+        margin: 15px auto;
+    }
+    .numbers-address {
+        width: 100%;
+    }
+    .numbers {
+       display: block;
+    }
+    .numbers p {
+        padding-top: 5px;
+    }
+    .logo {
+        justify-content: center;
+    }
+    .cart .tcart {
+        display: none;
+    }
+    .cart .mcart {
+        display: block;
+        padding:15px;
+        border-radius: 100%;
+        position: fixed;
+        top: 14%;
+        right: 7%;
+        z-index: 100;
+    }
+    .fas {
+        width: 200px;
+    }
+}

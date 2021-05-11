@@ -1,0 +1,12 @@
+@media (max-width: 1000px) {
+    .Pizzas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .main {
+        margin: 25px auto;
+    }
+    .fas {
+        width: 30%;
+    }
+}

@@ -8,7 +8,7 @@ export default function Home({setOrder}) {
     const menu = ["Всі","М'ясні", "Вегатеріанські", "Гриль", "Гострі", "Комбо"]
     useEffect(()=>{
         fetch('http://localhost:3000/db.json').then((resp)=>resp.json()).then(json=>setPizza(json.pizzas))
-    },[index])
+    },[])
     const click = (index) => {
         {index === 0 && setPizza(prevPizza => [...prevPizza].sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating)))}
         {index === 1 && setPizza(prevPizza => [...prevPizza].sort((a, b) => parseFloat(a.price) - parseFloat(b.price)))}

@@ -10,14 +10,14 @@ export default function Header() {
                            <img src="img/logo.jpg" alt="" />
                            <div className="logo-text">
                                <h2>Mermaid's song</h2>
-                               <p>Вкуснейшая пицца во вселенной</p>
+                               <p>Найсмачніша піца в галактиці</p>
                            </div>
                        </div>
                    </Link>
                    <Link to="/cart">
                        <div className="cart">
-                           <p className="tcart">0 ₴<span> | </span><FaShoppingCart /> 0</p>
-                           <p className="mcart"><FaShoppingCart /><span>0</span></p>
+                           <p className="tcart"><span>Кошик</span><FaShoppingCart /></p>
+                           <p className="mcart"><FaShoppingCart /></p>
                        </div>
                    </Link>
                </div>

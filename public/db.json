@@ -3,7 +3,7 @@
     {
       "id": 0,
       "imageUrl": "img/pizza5.jpg",
-      "name": "Пепперони Фреш \uD83C\uDF36️",
+      "name": "Пепероні фреш \uD83C\uDF36️",
       "types": [0, 1],
       "sizes": [26, 30, 40],
       "price": 110,
@@ -13,7 +13,7 @@
     {
       "id": 1,
       "imageUrl": "img/pizza2.jpg",
-      "name": "Сырная \uD83C\uDF31",
+      "name": "Сирна \uD83C\uDF31",
       "types": [0],
       "sizes": [26, 40],
       "price": 100,
@@ -23,7 +23,7 @@
     {
       "id": 2,
       "imageUrl": "img/pizza3.jpg",
-      "name": "Цыпленок барбекю \uD83C\uDF36️",
+      "name": "Курча барбекю \uD83C\uDF36️",
       "types": [0],
       "sizes": [26, 40],
       "price": 130,
@@ -33,7 +33,7 @@
     {
       "id": 3,
       "imageUrl": "img/pizza6.jpg",
-      "name": "Кисло-сладкий цыпленок",
+      "name": "Кисло-солодке курча",
       "types": [1],
       "sizes": [26, 30, 40],
       "price": 130,
@@ -43,7 +43,7 @@
     {
       "id": 4,
       "imageUrl": "img/pizza1.jpg",
-      "name": "Чизбургер-пицца",
+      "name": "Чізбургер-піца",
       "types": [0, 1],
       "sizes": [26, 30, 40],
       "price": 150,
@@ -53,7 +53,7 @@
     {
       "id": 5,
       "imageUrl": "img/pizza7.jpg",
-      "name": "Крэйзи пепперони \uD83C\uDF36️",
+      "name": "Крейзі пепероні \uD83C\uDF36️",
       "types": [0],
       "sizes": [30, 40],
       "price": 125,
@@ -63,7 +63,7 @@
     {
       "id": 6,
       "imageUrl": "img/pizza8.jpg",
-      "name": "Пепперони \uD83C\uDF36️",
+      "name": "Пепероні \uD83C\uDF36️",
       "types": [0, 1],
       "sizes": [26, 30, 40],
       "price": 135,
@@ -83,7 +83,7 @@
     {
       "id": 8,
       "imageUrl": "img/pizza9.jpg",
-      "name": "Четыре сезона",
+      "name": "Чотири сезони",
       "types": [0, 1],
       "sizes": [26, 30, 40],
       "price": 125,
@@ -93,7 +93,7 @@
     {
       "id": 9,
       "imageUrl": "img/pizza10.jpg",
-      "name": "Овощи и грибы\uD83C\uDF31",
+      "name": "Овочі та гриби\uD83C\uDF31",
       "types": [0, 1],
       "sizes": [26, 30, 40],
       "price": 110,

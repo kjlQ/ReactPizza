@@ -1,13 +1,16 @@
 import React,{useState} from 'react'
 import classNames from 'classnames'
-export default function Pizzas({name,imageUrl,price , types ,sizes }) {
+export default function Pizzas({name,imageUrl,price , types ,sizes ,items}) {
     const [selectType,setSelectType] = useState(types[0])
     const [selectSize,setSelectSize] = useState(sizes[0])
+    const [flag , setFlag] = useState(false)
     const fSelectionType = index => setSelectType(index)
     const fSelectionSize = index => setSelectSize(index)
-    const availableTypes = ["тонкое","стандартное"]
+    const availableTypes = ["тонке","стандартне"]
     const availableSizes = [26,30,40]
-
+    const changeAdd = () => {
+        setFlag(true)
+    }
     return (
         <div className="pizza">
             <img src={imageUrl} alt="" />
@@ -24,7 +27,10 @@ export default function Pizzas({name,imageUrl,price , types ,sizes }) {
             </div>
             <div className="price">
                 <p>Від {price}₴</p>
-                <p><span>+ Добавить</span></p>
+                <p onClick={()=> {
+                    changeAdd()
+                    items(name,selectType,selectSize,price,imageUrl)
+                }}><span className={flag ? "added" : ""}>{flag ?"Добавлено":"+ Додати"} </span></p>
             </div>
         </div>
     )

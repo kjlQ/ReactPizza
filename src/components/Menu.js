@@ -4,10 +4,10 @@ import {Transition} from "react-transition-group";
 export default function Menu({menu ,changePizzaType , click}) {
     const [active , setActive] = useState(0)
     const [gSort,setGSort] = useState()
-    const [text , setText] = useState(["популярности","цене ↑ ","цене ↓"])
     const [flag , setFlag] = useState(false)
     const [typeFlag,setTypeFlag] = useState(false)
     const [sortFlag , setSortFlag] = useState(false)
+    const text = ["популярності","ціні ↑ ","ціні ↓"]
     const SortRef = useRef(null)
     const doActive = (index) => {
         setActive(index)
@@ -19,12 +19,6 @@ export default function Menu({menu ,changePizzaType , click}) {
         setGSort(null)
         setSortFlag(false)
     },[active])
-    const changeFlag = () => {
-        setTimeout(()=> {
-            setFlag(!flag)
-            },500
-        )
-    }
     const handleOutsideClick = e => {
         if(!e.path.includes(SortRef.current)) {
             setFlag(false)
@@ -36,7 +30,7 @@ export default function Menu({menu ,changePizzaType , click}) {
     return (
         <>
             <div onClick={()=>setTypeFlag(!typeFlag)} className="type">
-                <div><p className={typeFlag?"rotation":"unrotation"}><FaArrowDown /></p>Тип пиццы:<span>{menu[active]}</span></div>
+                <div><p className={typeFlag?"rotation":"unrotation"}><FaArrowDown /></p>Тип пици:<span>{menu[active]}</span></div>
             </div>
             <div className="allmenu">
                 <Transition
@@ -53,7 +47,7 @@ export default function Menu({menu ,changePizzaType , click}) {
                     </div>}
                 </Transition>
                 <div ref={SortRef} className="sort-by" onClick={()=>setFlag(!flag)}>
-                    <div><p className={flag?"rotation":"unrotation"}><FaArrowDown /></p>Сортировать по: <span>{sortFlag?text[gSort]:"не выбрано"}</span></div>
+                    <div><p className={flag?"rotation":"unrotation"}><FaArrowDown /></p>Сортувати по: <span>{sortFlag?text[gSort]:"не вибрано"}</span></div>
                     <Transition
                     in={flag}
                     timeout={0}

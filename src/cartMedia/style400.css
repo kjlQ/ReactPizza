@@ -1,0 +1,5 @@
+@media (max-width: 400px) {
+    .totalCount,.totalPrice,.totalCount span,.totalPrice span ,.order .pizzaName p{
+        font-size: 15px;
+    }
+}

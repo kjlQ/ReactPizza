@@ -37,7 +37,7 @@ body {
     font-size: 15px;
 }
 .header-top {
-    height: 100px;
+    height: 70px;
     margin:auto;
     width: 80%;
     display: flex;
@@ -49,9 +49,18 @@ body {
 }
 header {
     border-bottom: 2px solid #F6F6F6;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 100;
+    border-radius: 10px;
 }
 .tcart {
     align-items: center;
+}
+.added {
+    background: #EB5A1E;
+    color: #fff !important;
 }
 .cart p {
     color: #fff;
@@ -61,7 +70,8 @@ header {
     border-radius: 20px;
 }
 .cart span {
-    font-size: 20px;
+    font-size: 17px;
+    padding-right: 5px;
 }
 .allmenu {
     width: 80%;

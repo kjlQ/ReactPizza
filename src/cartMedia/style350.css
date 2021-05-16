@@ -1,0 +1,21 @@
+@media (max-width: 350px) {
+    .main {
+        width: 107.34%;
+    }
+    .order {
+        width: 100%;
+    }
+    .total {
+        height: 50px;
+        display: block;
+        line-height: 30px;
+    }
+    .options {
+        display: block;
+        text-align: center;
+    }
+    .counter {
+        margin: auto;
+        justify-content: center;
+    }
+}

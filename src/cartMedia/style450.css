@@ -1,0 +1,33 @@
+@media (max-width: 450px) {
+ .wrapper {
+     width: 100%;
+ }
+    .main {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .order {
+        width: 95%;
+        margin: auto;
+    }
+    .order img {
+        height: 70px;
+    }
+    .label h1 {
+        font-size: 20px;
+    }
+    .label {
+       text-align: center;
+    }
+    .totalCount,.totalPrice,.totalCount span,.totalPrice span{
+        font-size: 17px;
+    }
+    .total {
+        width: 95%;
+        margin: auto;
+    }
+    .returnPay {
+        width: 95%;
+        margin: auto;
+    }
+}

@@ -2,7 +2,7 @@ import React ,{useState , useEffect } from 'react'
 import {Header, Menu, PizzaBlock} from "../components";
 import Cart from "./Cart";
 import {render} from "@testing-library/react";
-export default function Home({order}) {
+export default function Home({setOrder}) {
     const [pizza,setPizza] = useState([])
     const [index,setIndex] = useState(0)
     const menu = ["Всі","М'ясні", "Вегатеріанські", "Гриль", "Гострі", "Комбо"]
@@ -14,10 +14,11 @@ export default function Home({order}) {
         {index === 1 && setPizza(prevPizza => [...prevPizza].sort((a, b) => parseFloat(a.price) - parseFloat(b.price)))}
         {index === 2 && setPizza(prevPizza => [...prevPizza].sort((a, b) => parseFloat(b.price) - parseFloat(a.price)))}
     }
-    const items = (name,type,size,price,img) => {
-        {
-            order.push({name: name, type: type, size: size, price: price, img: img})
-        }
+    const items = (name,type,size,price,img,id) => {
+        if (name === '') return
+        setOrder(prevOrder => {
+            return [...prevOrder,{name: name, type: type, size: size, price: price, img: img,id:id}]
+        })
     }
     return (
         <>
@@ -26,7 +27,7 @@ export default function Home({order}) {
             <div className="product">
                 <h1> {menu.map((word,num)=> num===index? word : " ")} піци</h1>
                 <div className="Pizzas">
-                    {pizza.map(obj=> obj.category.map(numbers=>numbers === index? <PizzaBlock items={items} key={obj.id} {...obj}/>:""))}
+                    {pizza.map(obj=> obj.category.map(numbers=>numbers === index? <PizzaBlock items={items} key={obj.id} id={obj.id} {...obj}/>:""))}
                 </div>
             </div>
 

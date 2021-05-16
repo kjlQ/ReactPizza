@@ -7,11 +7,11 @@ import { media1200 , media450 , media400 , media350} from "./cartMedia";
 import React from "react";
 import {Route} from "react-router-dom";
 export default function App() {
-    const order=[]
+    const [order,setOrders]=React.useState([])
   return (
           <div className="main">
-              <Route exact path ="/" render={()=> <Home order={order} />} />
-              <Route exact path ="/cart" render={()=><Cart order={order} />} />
+              <Route exact path ="/" render={()=> <Home setOrder={setOrders} />} />
+              <Route exact path ="/cart" render={()=><Cart setOrders={setOrders} order={order} />} />
               <Footer />
           </div>
   )}

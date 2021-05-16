@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import classNames from 'classnames'
-export default function Pizzas({name,imageUrl,price , types ,sizes ,items}) {
+export default function Pizzas({id,name,imageUrl,price , types ,sizes ,items}) {
     const [selectType,setSelectType] = useState(types[0])
     const [selectSize,setSelectSize] = useState(sizes[0])
     const [flag , setFlag] = useState(false)
@@ -29,7 +29,7 @@ export default function Pizzas({name,imageUrl,price , types ,sizes ,items}) {
                 <p>Від {price}₴</p>
                 <p onClick={()=> {
                     changeAdd()
-                    items(name,selectType,selectSize,price,imageUrl)
+                    items(name,selectType,selectSize,price,imageUrl,id)
                 }}><span className={flag ? "added" : ""}>{flag ?"Добавлено":"+ Додати"} </span></p>
             </div>
         </div>

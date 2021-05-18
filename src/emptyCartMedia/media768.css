@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+    .button {
+        padding: 20%;
+    }
+    .empty img {
+        padding-top: 5%;
+    }
+    .text {
+        line-height: 40px;
+        width: 80%;
+    }
+    .empty {
+        padding-top: 10%;
+    }
+    .main {
+        margin: 30px auto;
+    }
+}

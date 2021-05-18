@@ -1,0 +1,11 @@
+@media (max-width: 500px) {
+    .empty {
+        padding: 0;
+    }
+    .text {
+        line-height: 30px;
+    }
+    .empty img {
+        height: 175px;
+    }
+}

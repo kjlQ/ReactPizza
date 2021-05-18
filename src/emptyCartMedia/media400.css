@@ -1,0 +1,21 @@
+@media (max-width: 400px) {
+    .main {
+        margin: 15px auto;
+    }
+    .empty {
+        padding: 0;
+    }
+    .text {
+        line-height: 25px;
+    }
+    .text p {
+        font-size: 18px;
+    }
+    .empty img {
+        height: 170px;
+    }
+    .button p{
+        width: 100%;
+        display: flex;
+    }
+}

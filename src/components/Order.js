@@ -1,23 +1,41 @@
 import React from 'react'
-export  default function Order({newOrders,index,remove}) {
+export  default function Order({order,remove,setTotalPrice,setTotalCount}) {
     const availableSizes = [26,30,40]
+    const [counter,setCounter]= React.useState(1);
+    const [price,setPrice]= React.useState(order.price);
+    const dec = count => {
+            count>1 && setCounter(prevCount => prevCount - 1)
+            count>1 && setTotalCount(prevCount=> prevCount -1)
+            price>order.price && setPrice(prevPrice=>prevPrice-order.price)
+            price>order.price && setTotalPrice(prevPrice =>prevPrice - order.price)
+    }
+    const inc = () => {
+        setCounter(prevCount => prevCount + 1)
+        setTotalCount(prevCount=> prevCount +1)
+        setPrice(prevPrice=>prevPrice+order.price)
+        setTotalPrice(prevPrice =>prevPrice + order.price)
+    }
+    React.useEffect(()=> {
+        setTotalPrice(prevPrice =>prevPrice + price)
+        setTotalCount(prevPrice =>prevPrice + counter)
+    },[])
     return (
         <div className="order">
-            <img src={newOrders.img} alt=""/>
+            <img src={order.img} alt=""/>
             <div className="pizzaName">
-                <h2>{newOrders.name}</h2>
-                <p>{newOrders.type == 0 && "тонке"}{newOrders.type == 1 && "стандартне"}  тісто / {availableSizes.map((item,index)=> index=== newOrders.size? item : "")} {newOrders.size===26 && 26} см</p>
+                <h2>{order.name}</h2>
+                <p>{order.type == 0 && "тонке"}{order.type == 1 && "стандартне"}  тісто / {availableSizes.map((item,index)=> index=== order.size? item : "")} {order.size===26 && 26} см</p>
             </div>
             <div className="options">
                 <div className="counter">
-                    <span className="minus-button"></span>1<span className="plus-button"></span>
+                    <span onClick={()=>dec(counter)} className="minus-button"></span>{counter}<span onClick={()=>inc()} className="plus-button"></span>
                 </div>
                 <div className="priceC">
-                    {newOrders.price}₴
+                    {price}₴
                 </div>
 
                 <div className="cl-btn-2">
-                    <div onClick={()=>remove(newOrders.id)}>
+                    <div onClick={()=>remove(order.id,counter,price)}>
                         <div className="leftright"></div>
                         <div className="rightleft"></div>
                     </div>

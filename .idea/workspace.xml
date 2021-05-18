@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd667539-b020-4aa9-ad8b-80c8ce11f38b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/img/empty.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CSS/emptyCartCSS.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CSS/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EmptyCart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/emptyCartMedia/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/emptyCartMedia/media400.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/emptyCartMedia/media500.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/emptyCartMedia/media768.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cartCSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/cartCSS.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PizzaBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PizzaBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,18 +43,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Sites/pizza" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ReactApps\ReactPizza\src\emptyCartMedia" />
       <recent name="D:\ReactApps\ReactPizza\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\ReactApps\ReactPizza\src" />
+      <recent name="D:\ReactApps\ReactPizza\src\emptyCartMedia" />
       <recent name="D:\ReactApps\ReactPizza\public\img" />
+      <recent name="D:\ReactApps\ReactPizza\src\CSS" />
+      <recent name="D:\ReactApps\ReactPizza\src" />
       <recent name="D:\ReactApps\ReactPizza\public" />
     </key>
   </component>
@@ -103,6 +115,7 @@
       <workItem from="1621168049082" duration="1053000" />
       <workItem from="1621180013110" duration="2341000" />
       <workItem from="1621183652778" duration="5727000" />
+      <workItem from="1621249909254" duration="18840000" />
     </task>
     <servers />
   </component>

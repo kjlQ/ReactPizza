@@ -45,7 +45,7 @@ header {
     border-bottom: 2px solid #F6F6F6;
 }
 .wrapper {
-    width: 40%;
+    width: 50%;
     margin: 20px auto;
 }
 .label ,.total , .returnPay {
@@ -54,17 +54,19 @@ header {
     height: 100px;
     align-items: center;
 }
-.label h1 ,.label h1 i {
+.label h1 ,.label h1 svg {
     font-size: 26px;
 }
 .label p ,.label p i {
     font-size: 14px;
     opacity: .5 ;
     cursor : pointer;
+    display: flex;
+    align-items: center;
 }
 .order{
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 0.5fr 1fr 1fr;;
     align-items: center;
     padding-bottom:10px ;
 }
@@ -173,6 +175,11 @@ header {
 }
 .return p , .return p i , .pay p {
     font-size: 17px;
+}
+.return a {
+    color: #000;
+    align-items: center;
+    display: flex;
 }
 .return p , .pay p {
     padding: 10px 15px;

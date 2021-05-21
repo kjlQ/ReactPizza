@@ -5,7 +5,7 @@ export default function Home({setOrderList}) {
     const [index,setIndex] = useState(0)
     const menu = ["Всі","М'ясні", "Вегатеріанські", "Гриль", "Гострі", "Комбо"]
     useEffect(()=>{
-        fetch('http://localhost:3000/db.json')
+        fetch('/db.json')
             .then((resp)=>resp.json())
             .then(json=>setPizza(json.pizzas))
     },[])

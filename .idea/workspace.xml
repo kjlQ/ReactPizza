@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd667539-b020-4aa9-ad8b-80c8ce11f38b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/empty.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CSS/emptyCartCSS.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CSS/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EmptyCart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/emptyCartMedia/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/emptyCartMedia/media400.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/emptyCartMedia/media500.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/emptyCartMedia/media768.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/OrderList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cartCSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/cartCSS.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +107,14 @@
       <workItem from="1621168049082" duration="1053000" />
       <workItem from="1621180013110" duration="2341000" />
       <workItem from="1621183652778" duration="5727000" />
-      <workItem from="1621249909254" duration="18840000" />
+      <workItem from="1621249909254" duration="19437000" />
+      <workItem from="1621334206406" duration="1518000" />
+      <workItem from="1621430732331" duration="2009000" />
+      <workItem from="1621442710266" duration="7490000" />
+      <workItem from="1621502770119" duration="81000" />
+      <workItem from="1621508918684" duration="9911000" />
+      <workItem from="1621577835945" duration="2500000" />
+      <workItem from="1621584870785" duration="594000" />
     </task>
     <servers />
   </component>

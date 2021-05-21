@@ -7,11 +7,12 @@ import { emedia768 , emedia500 , emedia400 } from "./emptyCartMedia";
 import React from "react";
 import {Route} from "react-router-dom";
 export default function App() {
-    const [order,setOrders]=React.useState([])
-  return (
-          <div className="main">
-              <Route exact path ="/" render={()=> <Home setOrder={setOrders} />} />
-              <Route exact path ="/cart" render={()=><Cart setOrders={setOrders} order={order} />} />
-              <Footer />
-          </div>
-  )}
+    const [orderList,setOrderList]=React.useState([])
+    return (
+        <div className="main">
+            <button onClick={()=>console.log(orderList)}></button>
+            <Route exact path ="/" render={()=> <Home setOrderList={setOrderList} />} />
+            <Route exact path ="/cart" render={()=> <Cart setOrderList={setOrderList} orders={orderList} />} />
+            <Footer />
+        </div>
+    )}

@@ -1,13 +1,13 @@
 import React ,{useState , useEffect } from 'react'
 import {Header, Menu, PizzaBlock} from "../components";
-import Cart from "./Cart";
-import {render} from "@testing-library/react";
-export default function Home({setOrder}) {
+export default function Home({setOrderList}) {
     const [pizza,setPizza] = useState([])
     const [index,setIndex] = useState(0)
     const menu = ["Всі","М'ясні", "Вегатеріанські", "Гриль", "Гострі", "Комбо"]
     useEffect(()=>{
-        fetch('http://localhost:3000/db.json').then((resp)=>resp.json()).then(json=>setPizza(json.pizzas))
+        fetch('http://localhost:3000/db.json')
+            .then((resp)=>resp.json())
+            .then(json=>setPizza(json.pizzas))
     },[])
     const click = (index) => {
         {index === 0 && setPizza(prevPizza => [...prevPizza].sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating)))}
@@ -16,7 +16,7 @@ export default function Home({setOrder}) {
     }
     const items = (name,type,size,price,img,id) => {
         if (name === '') return
-        setOrder(prevOrder => {
+        setOrderList(prevOrder => {
             return [...prevOrder,{name: name, type: type, size: size, price: price, img: img,id:id}]
         })
     }

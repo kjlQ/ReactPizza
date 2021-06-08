@@ -10,9 +10,8 @@ export default function App() {
     const [orderList,setOrderList]=React.useState([])
     return (
         <div className="main">
-            <button onClick={()=>console.log(orderList)}></button>
             <Route exact path ="/" render={()=> <Home setOrderList={setOrderList} />} />
-            <Route exact path ="/cart" render={()=> <Cart setOrderList={setOrderList} orders={orderList} />} />
+            <Route exact path ="/cart" render={()=> <Cart setOrderList={setOrderList} orderList={orderList} />} />
             <Footer />
         </div>
     )}

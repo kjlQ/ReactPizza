@@ -8,7 +8,8 @@
       "sizes": [26, 30, 40],
       "price": 110,
       "category": [0,1, 4],
-      "rating": 4
+      "rating": 4,
+      "warehouse": ["\uD83D\uDF84Копчена ковбаса", "\uD83D\uDF84Перець" ,"\uD83D\uDF84Моцарелла"]
     },
     {
       "id": 1,
@@ -18,7 +19,8 @@
       "sizes": [26, 40],
       "price": 100,
       "category": [0, 2],
-      "rating": 6
+      "rating": 6,
+      "warehouse": ["\uD83D\uDF84Пармезан ", "\uD83D\uDF84Брі " ,"\uD83D\uDF84Камбоцола ","\uD83D\uDF84Маскарпоне "]
     },
     {
       "id": 2,
@@ -28,7 +30,8 @@
       "sizes": [26, 40],
       "price": 130,
       "category": [0, 1 , 4],
-      "rating": 4
+      "rating": 4,
+      "warehouse": ["\uD83D\uDF84Гриби ", "\uD83D\uDF84Копсена курка " ,"\uD83D\uDF84Соус ","\uD83D\uDF84Моцарелла "]
     },
     {
       "id": 3,
@@ -38,7 +41,8 @@
       "sizes": [26, 30, 40],
       "price": 130,
       "category": [0, 1],
-      "rating": 2
+      "rating": 2,
+      "warehouse": ["\uD83D\uDF84Копсена курка " ,"\uD83D\uDF84Кисло-солодкий соус ","\uD83D\uDF84Моцарелла "]
     },
     {
       "id": 4,
@@ -48,7 +52,8 @@
       "sizes": [26, 30, 40],
       "price": 150,
       "category": [0,1,3],
-      "rating": 8
+      "rating": 8,
+      "warehouse": ["\uD83D\uDF84Маринована цибуля ", "\uD83D\uDF84Поміори " ,"\uD83D\uDF84Мариновані огірки ","\uD83D\uDF84Моцарелла "]
     },
     {
       "id": 5,
@@ -58,7 +63,8 @@
       "sizes": [30, 40],
       "price": 125,
       "category": [0,1,4],
-      "rating": 2
+      "rating": 2,
+      "warehouse": ["\uD83D\uDF84Соус ", "\uD83D\uDF84Бекон " ,"\uD83D\uDF84Копчена ковбаса ","\uD83D\uDF84Моцарелла "]
     },
     {
       "id": 6,
@@ -68,7 +74,8 @@
       "sizes": [26, 30, 40],
       "price": 135,
       "category": [0,1,4],
-      "rating": 9
+      "rating": 9,
+      "warehouse": ["\uD83D\uDF84Бекон " ,"\uD83D\uDF84Копчена ковбаса ","\uD83D\uDF84Моцарелла "]
     },
     {
       "id": 7,
@@ -78,7 +85,8 @@
       "sizes": [26, 30, 40],
       "price": 115,
       "category": [0, 2],
-      "rating": 10
+      "rating": 10,
+      "warehouse": ["\uD83D\uDF84Помдори ","\uD83D\uDF84Моцарелла "]
     },
     {
       "id": 8,
@@ -88,7 +96,8 @@
       "sizes": [26, 30, 40],
       "price": 125,
       "category": [0, 5],
-      "rating": 10
+      "rating": 10,
+      "warehouse": ["\uD83D\uDF84Кунжут ","\uD83D\uDF84Помідори ","\uD83D\uDF84Гриби ", "\uD83D\uDF84Бекон " ,"\uD83D\uDF84Копчена ковбаса ","\uD83D\uDF84Моцарелла "]
     },
     {
       "id": 9,
@@ -98,7 +107,8 @@
       "sizes": [26, 30, 40],
       "price": 110,
       "category": [0, 2],
-      "rating": 7
+      "rating": 7,
+      "warehouse": ["\uD83D\uDF84Помідори " ,"\uD83D\uDF84Перець " ,"\uD83D\uDF84Гриби","\uD83D\uDF84Моцарелла ","\uD83D\uDF84Фета "]
     }
   ]
 }

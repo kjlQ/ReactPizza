@@ -5,26 +5,27 @@ import { FiShoppingCart } from "react-icons/fi";
 import { IoIosArrowBack } from "react-icons/io";
 import { BsFillTrashFill } from "react-icons/bs";
 
-export default function OrdersList({ orders, setOrderList }) {
+export default function OrdersList({ orderList , setOrderList }) {
     const totalCount = useMemo(
-        () => orders.reduce((sum, order) => sum + (order.count ?? 1), 0),
-        [orders]
+        () =>
+            orderList.reduce((sum, order) => sum + (order.count ?? 1), 0),
+        [orderList]
     );
     const totalPrice = useMemo(
         () =>
-            orders.reduce((sum, order) => sum + order.price * (order.count ?? 1), 0),
-        [orders]
+            orderList.reduce((sum, order) => sum + order.price * (order.count ?? 1), 0),
+        [orderList]
     );
 
-    const handleRemoveOrder = useCallback(
-        (targetOrder) => {
-            setOrderList(orders.filter((order) => order !== targetOrder));
-        },
-        [setOrderList, orders]
-    );
+    const handleRemove = targetOrder => {
+        setOrderList(orderList.filter(ord=> ord !== targetOrder))
+    }
+    const handleClear = () => {
+        setOrderList(orderList.filter(ord=>ord.id=false))
+    }
     const handleOrderCountChange = useCallback(
         (targetOrder, nextCount) => {
-            const nextOrders = orders.map((order) => {
+            const nextOrders = orderList.map((order) => {
                 if (order === targetOrder) {
                     return {
                         ...order,
@@ -33,47 +34,26 @@ export default function OrdersList({ orders, setOrderList }) {
                 }
                 return order;
             });
-
             setOrderList(nextOrders);
         },
-        [setOrderList, orders]
+        [setOrderList, orderList]
     );
-
-    const renderOrderItem = useCallback(
-        (order) => (
-            <Order
-                key={order.id}
-                name={order.name}
-                typeLabel={TypeToLabel[order.type]}
-                size={order.size}
-                sizesList={SIZES_LIST}
-                totalPrice={order.price * (order.count ?? 1)}
-                pictureSrc={order.img}
-                onRemove={() => handleRemoveOrder(order)}
-                onCountChange={(nextCount) => handleOrderCountChange(order, nextCount)}
-                count={order.count}
-            />
-        ),
-        [handleRemoveOrder, handleOrderCountChange]
-    );
-
-    const handleClear = useCallback(() => setOrderList([]), [setOrderList]);
-    const handleSubmit = useCallback(() => {
-        console.log("SUBMIT:", orders);
-    }, [orders]);
-
-    return (
+    return(
         <div>
             <div className="label">
-                <h1>
-                    <FiShoppingCart /> Корзина
-                </h1>
-                <p onClick={handleClear}>
-                    <BsFillTrashFill />
-                    Очистить корзину
-                </p>
+                <h1><FiShoppingCart /> Корзина</h1>
+                <p onClick={()=>handleClear()}><BsFillTrashFill />Очистить корзину</p>
             </div>
-            {orders.map(renderOrderItem)}
+            {orderList.map((item, index) =>
+                <Order
+                    price={item.price}
+                    count = {item.count}
+                    onCountChange={(nextCount) => handleOrderCountChange(item, nextCount)}
+                    index = {index}
+                    key={`${item}_${index}`}
+                    order={item}
+                    orders ={orderList}
+                    remove={handleRemove} />)}
             <div className="total">
                 <div className="totalCount">
                     Всього піц:<span>{totalCount}шт</span>
@@ -84,19 +64,15 @@ export default function OrdersList({ orders, setOrderList }) {
             </div>
             <div className="returnPay">
                 <div className="return">
-                    <p>
-                        <Link to="/">
-                            <IoIosArrowBack /> Повернутися
-                        </Link>
-                    </p>
+                    <p><Link to="/"><IoIosArrowBack /> Повернутися</Link></p>
                 </div>
                 <div className="pay">
-                    <p onClick={handleSubmit}>Сплатити</p>
+                    <p onClick={()=>{
+                        console.log("Ваше замовлення")
+                        {orderList.map(obj=>console.log(obj))}
+                    }}>Сплатити</p>
                 </div>
             </div>
         </div>
-    );
+    )
 }
-
-const TypeToLabel = ["тонке", "стандартне"];
-const SIZES_LIST = [26, 30, 40];

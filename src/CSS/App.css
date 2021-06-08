@@ -188,7 +188,8 @@ header {
     background:#F3F3F3;
     border-radius: 10px;
     width: 95%;
-    margin: auto;
+    margin-top:200px ;
+    text-align: center;
 }
 .pizza-padding {
     padding: 5px;
@@ -298,4 +299,66 @@ footer h1 {
     transition: 0.42s;
     opacity: 0 ;
     margin-right:-100px ;
+}
+.data-wrapper {
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%) scale(1);
+    transition:1s;
+    z-index: 1000;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: white;
+    width: 900px;
+    max-width: 80%;
+}
+.data-warehouse {
+    width: 100%;
+}
+.data-wrapper img {
+    height: 500px;
+}
+.data-wrapper-body {
+    width: 98%;
+    display: flex;
+    padding: 10px 5px;
+}
+#overlay {
+    z-index: 100;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 1s ease-in-out;
+    right: 0;
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    pointer-events: all;
+}
+.nameAndCloseBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nameAndCloseBtn button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 23px;
+    font-weight: bold;
+}
+.data-pizzaWarehouse span {
+    font-weight: bold;
+}
+.data-pizzaName {
+    font-size: 25px;
+}
+.data-pizzaWarehouse li {
+    padding-left: 10px;
+}
+.data-price p {
+    margin: 20px auto;
+
 }

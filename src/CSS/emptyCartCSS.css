@@ -33,14 +33,6 @@ body {
     color: #7B7B7B;
     font-size: 15px;
 }
-.header-top {
-    height: 100px;
-    margin:auto;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 header {
     border-bottom: 2px solid #F6F6F6;
 }

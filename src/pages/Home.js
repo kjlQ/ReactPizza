@@ -21,18 +21,15 @@ export default function Home({setOrderList}) {
         setOrderList(prevOrder => [...prevOrder, {name: name, type: type, size: size, price: price, img: img, id: id}])
         alert(`${name} була додана в кошик`)
     }
-    const changeFlag = id => {
-        setId(id)
-    }
     return (
         <>
             <Header />
             <Menu changePizzaType={num=> setIndex(num)}  click={click} menu = {menu} />
-            {pizza.map(obj=>obj.id===id?<Warehouse items={items} key = {obj.id} {...obj} changeFlag={changeFlag} />:"")}
-            <div className="product">
+            {pizza.map(obj=>obj.id===id?<Warehouse items={items} key = {obj.id} {...obj} setId={setId} />:"")}
+            <div id="product" className="product">
                 <h1> {menu.map((word,num)=> num===index? word : " ")} піци</h1>
                 <div className="Pizzas">
-                    {pizza.map(obj=> obj.category.map(numbers=>numbers === index? <PizzaBlock changeFlag={changeFlag} key={obj.id} {...obj}/>:""))}
+                    {pizza.map(obj=> obj.category.map(numbers=>numbers === index? <PizzaBlock setId={setId} key={obj.id} {...obj}/>:""))}
                 </div>
             </div>
 

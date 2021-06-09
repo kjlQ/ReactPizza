@@ -5,11 +5,17 @@
     font-size: 15px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
+html {
+    scroll-behavior: smooth;
+}
 a {
     text-decoration: none;
 }
 li {
     list-style: none;
+}
+ul li a {
+    color: #000;
 }
 body {
     background-color:#F2BB66;
@@ -38,7 +44,7 @@ body {
     font-size: 15px;
 }
 .header-top {
-    height: 70px;
+    height: 80px;
     margin:auto;
     width: 80%;
     display: flex;
@@ -121,6 +127,8 @@ header {
 }
 .active-sort {
     background-color:#000 !important;
+}
+.active-sort a {
     color:#fff;
 }
 .sort {
@@ -361,5 +369,4 @@ footer h1 {
 }
 .data-price p {
     margin: 20px auto;
-
 }

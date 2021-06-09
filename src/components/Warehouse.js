@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from "classnames";
-export default function Warehouse({price,id,warehouse,imageUrl,name,changeFlag,types,sizes,items}) {
+export default function Warehouse({price,id,warehouse,imageUrl,name,setId,types,sizes,items}) {
     const [selectType,setSelectType] = React.useState(types[0])
     const [selectSize,setSelectSize] = React.useState(sizes[0])
     const fSelectionType = index => setSelectType(index)
@@ -19,11 +19,11 @@ export default function Warehouse({price,id,warehouse,imageUrl,name,changeFlag,t
                            <div className={"data-pizzaName"}>
                                {name}
                            </div>
-                           <button onClick={()=>changeFlag(undefined)}>×</button>
+                           <button onClick={()=>setId(undefined)}>×</button>
                        </div>
                        <div className={"data-pizzaWarehouse"}>
                            <span>Склад:</span>
-                           {warehouse.map(obj=><li key={`${obj}${id}`}>{obj}</li>)}
+                           {warehouse.map(obj=><li key={`${obj}${id}`}>🞄{obj}</li>)}
                        </div>
                        <div className="pizza-settings">
                            <div className="pizza-padding">
@@ -36,7 +36,10 @@ export default function Warehouse({price,id,warehouse,imageUrl,name,changeFlag,t
                            </div>
                        </div>
                        <div className="price data-price">
-                           <p><span onClick={()=>items(name,selectType,selectSize,price,imageUrl,id)} >+ Додати</span></p>
+                           <p><span onClick={()=> {
+                               items(name, selectType, selectSize, price, imageUrl, id)
+                               setId(undefined)
+                           }} >+ Додати</span></p>
                        </div>
                    </div>
                </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-export default function Pizzas({id,name,imageUrl,price,changeFlag}) {
+export default function Pizzas({id,name,imageUrl,price,setId}) {
     return (
         <div className="pizza">
             <div className="onClick">
@@ -8,7 +8,7 @@ export default function Pizzas({id,name,imageUrl,price,changeFlag}) {
             </div>
             <div className="price">
                 <p>Від {price}₴</p>
-                <p><span onClick={()=>changeFlag(id)} >+ Додати</span></p>
+                <p><span onClick={()=>setId(id)} >+ Додати</span></p>
             </div>
         </div>
     )

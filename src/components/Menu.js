@@ -39,14 +39,14 @@ export default function Menu({menu ,changePizzaType , click}) {
                 >
                     {state=><div className={typeFlag?`menu active-menu ${state}`:`menu`}>
                         <ul>
-                            {menu.map((el,index)=><li onClick={word=> {
+                            {menu.map((el,index)=><li onClick={()=> {
                                 doActive(index)
                                 changePizzaType(index)
-                            }} className={active===index?"active-sort":""} key={`${el}_${index}`}>{el}</li>)}
+                            }} className={active===index?"active-sort":""} key={`${el}_${index}`}><a href="#sort">{el}</a></li>)}
                         </ul>
                     </div>}
                 </Transition>
-                <div ref={SortRef} className="sort-by" onClick={()=>setFlag(!flag)}>
+                <div ref={SortRef} id="sort" className="sort-by" onClick={()=>setFlag(!flag)}>
                     <div><p className={flag?"rotation":"unrotation"}><FaArrowDown /></p>Сортувати по: <span>{sortFlag?text[gSort]:"не вибрано"}</span></div>
                     <Transition
                     in={flag}
@@ -58,7 +58,7 @@ export default function Menu({menu ,changePizzaType , click}) {
                                     doGlobalSort(index)
                                     setSortFlag(true)
                                     click(index)
-                                }} className={gSort===index?"activeGlobalSort":""} key={`${el}_${index}`}>{el}</li>)}
+                                }} className={gSort===index?"activeGlobalSort":""} key={`${el}_${index}`}><a href="#sort">{el}</a></li>)}
                             </ul>
                         </div>}
                     </Transition>

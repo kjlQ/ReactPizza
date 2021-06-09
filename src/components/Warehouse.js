@@ -23,7 +23,7 @@ export default function Warehouse({price,id,warehouse,imageUrl,name,setId,types,
                        </div>
                        <div className={"data-pizzaWarehouse"}>
                            <span>Склад:</span>
-                           {warehouse.map(obj=><li key={`${obj}${id}`}>🞄{obj}</li>)}
+                           {warehouse.map(obj=><li key={`${obj}${id}`}>-{obj}</li>)}
                        </div>
                        <div className="pizza-settings">
                            <div className="pizza-padding">

@@ -2,7 +2,7 @@ import React from 'react'
 export default function Pizzas({id,name,imageUrl,price,changeFlag}) {
     return (
         <div className="pizza">
-            <div className="ifClick">
+            <div className="onClick">
                 <img src={imageUrl} alt="" />
                 <h2>{name}</h2>
             </div>

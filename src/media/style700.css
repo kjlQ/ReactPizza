@@ -53,4 +53,38 @@
     .fas {
         width: 200px;
     }
+    .nameAndCloseBtn button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 30px;
+    }
+    .data-wrapper-body {
+        display: block;
+        margin: auto;
+    }
+    .data-pizzaImage img{
+        height: 300px;
+    }
+    .data-pizzaImage {
+        display: flex;
+        justify-content: center;
+    }
+    .pizza-settings {
+        margin-top:0;
+    }
+    .data-pizzaName {
+        margin: auto;
+    }
+    .price {
+        padding:0;
+    }
+    .onClick {
+        padding-top: 10px;
+    }
+    .sort-by,.type  {
+        width: 100%;
+        left: 0;
+        padding-left: 20px;
+    }
 }

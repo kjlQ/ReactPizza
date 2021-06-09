@@ -19,6 +19,7 @@ export default function Home({setOrderList}) {
     const items = (name,type,size,price,img,id) => {
         if (name === '') return
         setOrderList(prevOrder => [...prevOrder, {name: name, type: type, size: size, price: price, img: img, id: id}])
+        alert(`${name} була додана в кошик`)
     }
     const changeFlag = id => {
         setId(id)

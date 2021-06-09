@@ -20,7 +20,7 @@ export default function Menu({menu ,changePizzaType , click}) {
         setSortFlag(false)
     },[active])
     const handleOutsideClick = e => {
-        if(!e.path.includes(SortRef.current)) {
+        if(!e.composedPath().includes(SortRef.current)) {
             setFlag(false)
         }
     }

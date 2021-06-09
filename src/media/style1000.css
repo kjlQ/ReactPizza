@@ -9,4 +9,10 @@
     .fas {
         width: 30%;
     }
+    .data-pizzaImage img{
+        height: 400px;
+    }
+    .pizza-settings {
+        margin-top: 100px;
+    }
 }

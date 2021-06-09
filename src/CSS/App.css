@@ -3,6 +3,7 @@
     padding: 0;
     font-family: Verdana;
     font-size: 15px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 a {
     text-decoration: none;
@@ -188,7 +189,7 @@ header {
     background:#F3F3F3;
     border-radius: 10px;
     width: 95%;
-    margin-top:200px ;
+    margin-top:150px ;
     text-align: center;
 }
 .pizza-padding {
